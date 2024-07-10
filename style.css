@@ -1,0 +1,308 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(146, 97, 6);
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: rgb(58, 49, 20);
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-left a {
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+#inicio {
+    font-size: 2em; 
+    text-align: center;
+    padding: 4em 2em;
+}
+
+section {
+    padding: 4em 0;
+    margin: 0 2em;
+    
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.profile {
+    margin-left: 2em;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    
+    
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    
+}
+
+.social-links a {
+    margin: 0 1em;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: burlywood;
+    
+}
+
+.personal-info {
+    max-width: 60%;
+    text-align: left;
+    
+}
+
+.personal-info h2 {
+    margin: 0.5em 0;
+}
+
+section#sobremi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(223, 164, 55)
+}
+
+section#mi {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+
+.skills-container,
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    background-color: rgb(207, 216, 230);
+}
+
+.skill,
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.skill img,
+.hobby img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+.skill p,
+.hobby p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#skills,
+#hobbies,
+#formacion,
+#proyectos,
+#contacto {
+    text-align: center;
+}
+
+.formacion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.formacion-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.formacion-item .formacion-content {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.formacion-item img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.formacion-item h2 {
+    margin-top: 0;
+}
+
+.formacion-item p {
+    margin: 0.5em 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.contact-image,
+form {
+    flex: 1;
+}
+
+.contact-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 800px;
+    padding: 2em;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.form-group button {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.75em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-group button:hover {
+    background: #555;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+footer{
+    text-align: center;
+    font-size:medium;
+    
+}
+
+/* Animación de zoom para los íconos de habilidades */
+.skill img,
+.hobby img,
+.proyecto-item img {
+    transition: transform 0.3s ease-out;
+}
+
+.skill img:hover,
+.hobby img:hover,
+.proyecto-item img:hover {
+    transform: scale(1.1);
+}
+
+.profile img {
+    transition: transform 0.9s ease-out, border-radius 0.3s ease-out, border-color 0.3s ease-out;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+#sobremi,
+#mi {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+#sobremi:hover,
+#mi:hover {
+    transform: scale(1.2); 
+}
+
+#mi {
+    font-size: 1.5em;
+    text-align: justify; 
+    padding: 4em 2em; 
+}
+
+
